@@ -81,7 +81,7 @@ function App() {
   const [troco, setTroco] = useState('');
 
   var filterFloat = function (value) {
-    if (/^(\-|\+)?([0-9]+((\.+[0-9]+)|(.)?)?)$/.test(value))
+    if (/^(-|\+)?([0-9]+((\.+[0-9]+)|(\.)?)?)$/.test(value))
       return value;
     return "";
   }
@@ -108,7 +108,6 @@ function App() {
 
       setValorPago(valueIn);
     }
-
   }
 
   var cleanInputs = function () {
@@ -118,7 +117,7 @@ function App() {
   }
 
   var calcBallot = function () {
-    alert(troco);
+    alert("Funcao não implementada:", troco);
   }
 
   return (
